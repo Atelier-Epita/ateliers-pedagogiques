@@ -48,7 +48,7 @@
 % leave loading it to the user so they can get the order right
 \@ifpackageloaded{hyperref}{%
 \RequirePackage{xcolor}
-\providecolor{manuallinkcolor}{HTML}{004a0e}
+\providecolor{manuallinkcolor}{HTML}{c89004}
 \hypersetup{colorlinks,allcolors=manuallinkcolor}%
 }{}%
 }
