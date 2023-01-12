@@ -40,6 +40,8 @@
 \end{titlepage}
 }
 
+% rename content table
+\renewcommand*\contentsname{Sommaire}
 
 \AtEndPreamble{%
 % set some hyperref options if it's loaded
@@ -49,6 +51,4 @@
 \providecolor{manuallinkcolor}{HTML}{004a0e}
 \hypersetup{colorlinks,allcolors=manuallinkcolor}%
 }{}%
-% let minted's listing captions use the correct font
-\@ifpackageloaded{minted}{\let\@float@c@listing\@caption}{}
 }
