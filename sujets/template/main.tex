@@ -8,12 +8,10 @@
 % Packages used in this example
 \usepackage{graphicx}  % for including images
 \usepackage{microtype} % for typographical enhancements
-%\usepackage{minted}    % for code listings
 \usepackage{amsmath}   % for equations and mathematics
-%\setminted{style=friendly,fontsize=\small}
-%\renewcommand{\listoflistingscaption}{List of Code Listings}
 \usepackage{hyperref}  % for hyperlinks
-\usepackage[a4paper,top=4.2cm,bottom=4.2cm,left=3.5cm,right=3.5cm]{geometry} % for setting page size and margins
+\usepackage[a4paper,top=4.2cm,bottom=4.2cm,left=3.5cm,right=3.5cm, headheight=24pt]{geometry} % for setting page size and margins
+\usepackage{fancyhdr}
 
 % Custom macros
 \newcommand{\doclink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
@@ -24,8 +22,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Frontmatter data; appears on title page
-\title{Sujet de TP \\(template)}
-\version{0.1.0}
+\newcommand\gettitle{Sujet de TP \\(template)}
+\newcommand{\getversion}{0.1.0}
+\title{\gettitle}
+\version{\getversion}
 \author{Bob}
 \logo{\includegraphics[width=8cm]{../../static/logo}}
 
@@ -33,8 +33,14 @@
 
 \maketitle
 
+% configure header & footer
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{\includegraphics[width=2cm]{../../static/logo}}
+\fancyhead[R]{\gettitle}
+\fancyfoot[C]{\thepage}
+
 \tableofcontents
-%\listoflistings
 \newpage
 
 \section{Introduction}
