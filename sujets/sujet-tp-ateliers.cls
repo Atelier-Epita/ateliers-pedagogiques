@@ -42,6 +42,8 @@
 
 % rename content table
 \renewcommand*\contentsname{Sommaire}
+% change section numbering to Roman
+\renewcommand\thesection{\Roman{section}}
 
 \AtEndPreamble{%
 % set some hyperref options if it's loaded
