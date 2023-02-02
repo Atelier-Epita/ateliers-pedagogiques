@@ -5,7 +5,7 @@
 L'interface d'OpenSCAD est composée de plusieurs fenêtres :
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=12cm]{images/interface}
 	\caption{\textit{Interface d'OpenSCAD}}
@@ -40,3 +40,29 @@ Elle permet de voir les potentiels avertissements ou erreurs afin de les corrige
 \subsubsection{Panneau de personnalisation}
 
 Nous n'utiliserons pas cette fenêtre dans cet atelier, elle est destinée à des utilisateurs avancés.
+
+
+\subsection{Premiers pas}
+
+\subsubsection{Formes basiques}
+
+OpenSCAD dispose de plusieurs objets simples pour entamer la création de modèles : 
+\verb|square|, \verb|circle|, \verb|cube|, \verb|cylinder| et \verb|sphere|.
+
+Créons par exemple un cube d'1cm de côté. Pour cela il suffit d'écrire \verb|cube(1);| dans l'éditeur.
+Ensuite, il faut appuyer sur la touche \verb|F5| de votre clavier pour pouvoir calculer l'aperçu.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{images/cube_1}
+	\caption{\textit{Simple cube d'1cm de côté}}
+\end{figure}
+
+Rajoutons maintenant un pavé de 2cm de long, 2cm de large et 0.5cm de haut.
+Cela se fait également avec la \textbf{fonction} \verb|cube| mais cette fois en mettant une liste de valeurs en \textbf{paramètre} : \verb|cube([2,2,0.5]);|.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{images/cube_2-2-05}
+	\caption{\textit{Pavé droit}}
+\end{figure}
