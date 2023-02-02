@@ -46,6 +46,39 @@
 % change section numbering to Roman
 \renewcommand\thesection{\Roman{section}}
 
+% custom tcolorboxes
+\newcommand{\hint}[1]{
+    \begin{tcolorbox}[
+        enhanced,
+        colback=yellow-atelier!15,
+        colframe=yellow!75!black,
+        coltitle=black,
+        colbacktitle=yellow!50!white,
+        title={\includegraphics[height=11pt]{icons/hint} \large{\textbf{HINT}}},
+        attach boxed title to top left={yshift=-11pt,xshift=11pt},
+        leftrule=2mm,
+        top=11pt
+        ]
+        {#1}
+    \end{tcolorbox}
+}
+
+\newcommand{\warning}[1]{
+    \begin{tcolorbox}[
+        enhanced,
+        colback=yellow-atelier!15,
+        colframe=red!75!black,
+        coltitle=black,
+        colbacktitle=red!50!white,
+        title={\includegraphics[height=11pt]{icons/warning} \large{\textbf{WARNING}}},
+        attach boxed title to top left={yshift=-11pt,xshift=11pt},
+        leftrule=2mm,
+        top=11pt
+        ]
+        {#1}
+    \end{tcolorbox}
+}
+
 \AtEndPreamble{%
 % set some hyperref options if it's loaded
 % leave loading it to the user so they can get the order right
