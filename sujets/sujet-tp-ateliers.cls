@@ -2,6 +2,7 @@
 \ProvidesClass{sujet-tp-ateliers}[2023/01/12 v0.0.1 Sujet de TP pour les ateliers pédagogiques]
 % sample software documentation format
 
+
 % set default smaller margins, separated paragraphs, bigger line spacing
 % (fullpage used as fallback if geometry package removed from main preamble)
 \RequirePackage{fullpage,parskip}
@@ -49,8 +50,7 @@
 % set some hyperref options if it's loaded
 % leave loading it to the user so they can get the order right
 \@ifpackageloaded{hyperref}{%
-\RequirePackage{xcolor}
-\providecolor{manuallinkcolor}{HTML}{c89004}
-\hypersetup{colorlinks,allcolors=manuallinkcolor}%
+\providecolor{yellow-atelier}{HTML}{c89004}
+\hypersetup{colorlinks,allcolors=yellow-atelier}%
 }{}%
 }
