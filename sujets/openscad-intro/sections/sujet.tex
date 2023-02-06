@@ -113,3 +113,29 @@ Le fonctionnement est très similaire, il faut utiliser la fonction \verb|rotate
 \end{figure}
 
 L'exemple suivant crée un cube d'1cm de côté, puis un pavé droit auquel est appliquée une rotation de -135° selon l'axe Z (vertical).
+
+
+\subsubsection{Combinaison d'instructions}
+
+Très souvent — voire quasiment tout le temps — il est nécessaire d'appliquer plusieurs modifications à un même objet. 
+Pour cela, il suffit d'écrire les instructions les unes à la suite des autres.
+
+Reprenons par exemple le même modèle (le cube et le pavé) et appliquons une rotation au pavé puis une translation.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{images/rotate-translate}
+	\caption{\textit{Rotation puis translation du pavé droit}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{images/translate-rotate}
+	\caption{\textit{Translation puis rotation du pavé droit}}
+\end{figure}
+
+\warning{
+L'ordre des instructions est très important.
+Il faut lire le code en le "remontant", c'est à dire en partant de la fin du bloc (souvent le modèle de base avec le point-virgule) puis en lisant à l'envers les instructions.
+
+En effet, chaque nouvelle modification s'effectue sur le résultat de la précédente et non sur le modèle à l'origine.}
