@@ -139,3 +139,30 @@ L'ordre des instructions est très important.
 Il faut lire le code en le "remontant", c'est à dire en partant de la fin du bloc (souvent le modèle de base avec le point-virgule) puis en lisant à l'envers les instructions.
 
 En effet, chaque nouvelle modification s'effectue sur le résultat de la précédente et non sur le modèle à l'origine.}
+
+
+
+\subsection{A toi de jouer !}
+
+\subsubsection{Autres instructions}
+
+Vous avez pu voir quelques instructions basiques dans les pages précédentes mais il en existe des dizaines d'autres.
+Mais pas de panique, elles sont très faciles à prendre en main, la structure est toujours sensiblement la même.
+
+Le secret pour réaliser votre modèle 3D le plus facilement est de \textbf{lire la documentation}.
+Bien évidemment, il ne faut pas faire ça d'un seul coup mais plutôt s'en servir comme un outil d'information, de la même manière qu'un dictionnaire par exemple.
+
+Vous pouvez retrouver en annexe un lien vers un document très important : la \textbf{cheatsheet} d'OpenSCAD.
+Cette cheatsheet (feuille de triche) est une page regroupant l'essentiel des informations nécessaires.
+En l'occurrence, il y a un lien vers la documentation détaillée de chaque instruction cliquez dessus pour connaitre les détails.
+
+\hint{Si vous avez besoin d'aide, n'hésitez surtout pas à appeler un/e staff qui saura vous guider, ils/elles sont là pour ça !}
+
+\vspace{12pt}
+Voici quelques exemples d'instructions qui pourraient vous être utiles :
+\begin{itemize}
+	\item \verb|scale()| permet de modifier la taille de l'objet.
+	\item \verb|color()| permet de colorier l'objet.
+	\item \verb|difference() {objet1; objet2; ...}| extrude l'objet2 à l'objet1.
+	\item \verb|intersection() {objet1; objet2; ...}| ne conserve que la matière commune à tous les objets.
+\end{itemize}
