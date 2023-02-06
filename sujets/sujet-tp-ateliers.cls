@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sujet-tp-ateliers}[2023/01/12 v0.1.0 Sujet de TP pour les ateliers pédagogiques]
+\ProvidesClass{sujet-tp-ateliers}[2023/01/12 v0.0.1 Sujet de TP pour les ateliers pédagogiques]
 % sample software documentation format
 
 
