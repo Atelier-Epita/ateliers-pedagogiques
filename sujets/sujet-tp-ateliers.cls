@@ -1,6 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sujet-tp-ateliers}[2023/01/12 v0.1.0 Sujet de TP pour les ateliers pédagogiques]
+\ProvidesClass{sujet-tp-ateliers}[2023/01/12 v0.0.1 Sujet de TP pour les ateliers pédagogiques]
 % sample software documentation format
+
 
 % set default smaller margins, separated paragraphs, bigger line spacing
 % (fullpage used as fallback if geometry package removed from main preamble)
@@ -45,12 +46,45 @@
 % change section numbering to Roman
 \renewcommand\thesection{\Roman{section}}
 
+% custom tcolorboxes
+
+\newcommand{\hint}[1]{
+    \begin{tcolorbox}[
+        enhanced,
+        colback=yellow-atelier!15,
+        colframe=yellow!75!black,
+        coltitle=black,
+        colbacktitle=yellow!50!white,
+        title={\includegraphics[height=11pt]{../../static/hint} \large{\textbf{HINT}}},
+        attach boxed title to top left={yshift=-11pt,xshift=11pt},
+        leftrule=2mm,
+        top=11pt
+        ]
+        {#1}
+    \end{tcolorbox}
+}
+
+\newcommand{\warning}[1]{
+    \begin{tcolorbox}[
+        enhanced,
+        colback=yellow-atelier!15,
+        colframe=red!75!black,
+        coltitle=black,
+        colbacktitle=red!50!white,
+        title={\includegraphics[height=11pt]{../../static/warning} \large{\textbf{WARNING}}},
+        attach boxed title to top left={yshift=-11pt,xshift=11pt},
+        leftrule=2mm,
+        top=11pt
+        ]
+        {#1}
+    \end{tcolorbox}
+}
+
 \AtEndPreamble{%
 % set some hyperref options if it's loaded
 % leave loading it to the user so they can get the order right
 \@ifpackageloaded{hyperref}{%
-\RequirePackage{xcolor}
-\providecolor{manuallinkcolor}{HTML}{c89004}
-\hypersetup{colorlinks,allcolors=manuallinkcolor}%
+\providecolor{yellow-atelier}{HTML}{c89004}
+\hypersetup{colorlinks,allcolors=yellow-atelier}%
 }{}%
 }
