@@ -77,3 +77,39 @@ Un repère est placé en bas à gauche de la fenêtre de visualisation.}
 Le langage d'OpenSCAD n'est pas \textit{indent sensitive}, c'est à dire que l'indentation (retours à la ligne et tabulations) ne change en rien l'exécution du programme.
 Ainsi, afin de séparer les différents blocs d'instructions, il est nécessaire de mettre un \textbf{;} à la fin.
 Sans ces points-virgules, le programme ne pourra pas compiler.}
+
+
+\subsubsection{Transformations : translations}
+
+Pour le moment, les objets que nous créons sont tous positionnés au même endroit dans l'espace, à partir de l'origine du repère.
+Pour pouvoir les déplacer, nous allons appeler la fonction \verb|translate()|.
+
+La syntaxe est la même que pour la création des objets, on indique les valeurs de translation dans une liste (entre crochets) dans l'ordre des axes.
+
+\vspace{12pt}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{images/translate}
+	\caption{\textit{Translation du pavé droit}}
+\end{figure}
+
+L'exemple suivant crée un cube d'1cm de côté, puis un pavé droit qui est translaté de 1.5 selon l'axe X et -0.5 selon l'axe Z.
+
+La translation n'est appliquée qu'au deuxième objet car un point virgule a été mis après le premier cube.
+
+
+\subsubsection{Transformations : rotations}
+
+Nous avons comment effectuer des translations, passons désormais aux rotations.
+Le fonctionnement est très similaire, il faut utiliser la fonction \verb|rotate()|.
+
+\vspace{12pt}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{images/rotate}
+	\caption{\textit{Rotation du pavé droit}}
+\end{figure}
+
+L'exemple suivant crée un cube d'1cm de côté, puis un pavé droit auquel est appliquée une rotation de -135° selon l'axe Z (vertical).
