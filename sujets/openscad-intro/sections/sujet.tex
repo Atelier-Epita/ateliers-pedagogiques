@@ -58,11 +58,21 @@ Ensuite, il faut appuyer sur la touche \verb|F5| de votre clavier pour pouvoir c
 	\caption{\textit{Simple cube d'1cm de côté}}
 \end{figure}
 
-Rajoutons maintenant un pavé de 2cm de long, 2cm de large et 0.5cm de haut.
+Rajoutons maintenant un pavé droit de 2cm de long, 2cm de large et 0.5cm de haut.
 Cela se fait également avec la \textbf{fonction} \verb|cube| mais cette fois en mettant une liste de valeurs en \textbf{paramètre} : \verb|cube([2,2,0.5]);|.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=12cm]{images/cube_2-2-05}
-	\caption{\textit{Pavé droit}}
+	\caption{\textit{Cube et Pavé droit}}
 \end{figure}
+
+\hint{
+L'ordre des instructions est important. 
+Ici, les dimensions sont notées selon l'axe x, puis l'axe y et enfin l'axe z.
+
+Un repère est placé en bas à gauche de la fenêtre de visualisation.}
+
+\warning{
+Le langage d'OpenSCAD n'est pas \textit{indent sensitive}, c'est à dire que les retours à la ligne ne changent en rien l'éxécution du programme.
+Ainsi, afin de séparer les différens blocs d'instructions, il est nécessaire de mettre un \verb|;| à la fin. Sans ces points-virgules, le programme ne pourra pas compiler.}
