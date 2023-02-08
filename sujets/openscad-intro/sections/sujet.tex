@@ -101,7 +101,7 @@ La translation n'est appliquée qu'au deuxième objet car un point virgule a ét
 
 \subsubsection{Transformations : rotations}
 
-Nous avons comment effectuer des translations, passons désormais aux rotations.
+Nous avons vu comment effectuer des translations, passons désormais aux rotations.
 Le fonctionnement est très similaire, il faut utiliser la fonction \verb|rotate()|.
 
 \vspace{12pt}
@@ -166,7 +166,60 @@ Voici quelques exemples d'instructions qui pourraient vous être utiles :
 	\item \verb|difference() {objet1; objet2; ...}| extrude l'objet2 à l'objet1.
 	\item \verb|intersection() {objet1; objet2; ...}| ne conserve que la matière commune à tous les objets.
 	\item \verb|text()| crée une surface (2D) selon le texte écrit.
+	\item \verb|linear_extrude(h)| transforme une figure 2D en objet 3D de hauteur h.
 \end{itemize}
+
+
+\subsubsection{Example}
+
+Pour vous aider, voici un exemple de porte-clé résumant ce que vous avez pu apprendre.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=12cm]{images/example}
+	\caption{\textit{Example d'un porte-clé personnalisé}}
+\end{figure}
+
+\hint{
+Le caractère \# placé devant un objet permet de l'afficher en transparence.
+Il peut s'avérer utile afin de visualiser des objets extrudés, comme c'est le cas ici avec le trou et le texte.}
+
+Il y a 4 objets créés dans ce script :
+
+\begin{itemize}
+	\item un cube pour la pièce centrale
+	\item un cylindre pour l'arrondi sur le côté
+	\item un deuxième cylindre pour le trou
+	\item un texte
+\end{itemize}
+
+Afin de regrouper le cube et le cylindre en un seul objet, on applique la fonction \verb|union()|.
+Ensuite, on soustrait à cette forme un cylindre afin de créer le trou pour les clés.
+Enfin, on ajoute le texte et on le transforme en modèle 3D pour pouvoir l'extruder.
+
+\warning{
+Il ne faut pas creuser le texte sur toute la longueur de la pièce, sinon l'impression ne pourra pas fonctionner.
+Faites attention à laisser une épaisseur suffisante en dessous du texte.}
+
+\begin{scriptsize}
+\begin{tcolorbox}[title=Code]
+\verb|difference(){|\\
+\verb|  difference(){|\\
+\verb|    union(){|\\
+\verb|      cube([40, 25, 6], center=true);|\\
+\verb|      |\\
+\verb|      translate([-20, 0, 0])|\\
+\verb|      cylinder(h=6, r=12.5, center=true);|\\
+\verb|    }|\\
+\verb|    #translate([-25, 0, 0])|\\
+\verb|    cylinder(h=10, r=4, center=true);|\\
+\verb|  }|\\
+\verb|  #translate([-17, -3.25, 0])|\\
+\verb|  linear_extrude(4)|\\
+\verb|  text("L'Atelier", size=6.5, font ="Liberation Sans:style=Bold");|\\
+\verb|}|
+\end{tcolorbox}
+\end{scriptsize}
 
 
 \subsubsection{Et maintenant ?}
