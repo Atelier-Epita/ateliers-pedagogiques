@@ -49,6 +49,15 @@
 % break line
 \newcommand{\br}{\vspace{12pt}}
 
+% preconfigured figure to illustrate content
+\newcommand{\illustrate}[2]{
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=12cm]{images/{#1}}
+		\caption{\textit{{#2}}
+	\end{figure}}
+}
+
 % custom tcolorboxes
 
 \newcommand{\hint}[1]{
