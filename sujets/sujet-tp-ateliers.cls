@@ -46,6 +46,9 @@
 % change section numbering to Roman
 \renewcommand\thesection{\Roman{section}}
 
+% break line
+\newcommand{\br}{\vspace{12pt}}
+
 % custom tcolorboxes
 
 \newcommand{\hint}[1]{
