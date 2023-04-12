@@ -124,7 +124,8 @@
 % set some hyperref options if it's loaded
 % leave loading it to the user so they can get the order right
 \@ifpackageloaded{hyperref}{%
-\providecolor{yellow-atelier}{HTML}{c89004}
-\hypersetup{colorlinks,allcolors=yellow-atelier}%
+\providecolor{yellow-atelier}{HTML}{fab60a}
+\providecolor{dark-yellow-atelier}{HTML}{e1a205}
+\hypersetup{colorlinks,allcolors=dark-yellow-atelier}%
 }{}%
 }
