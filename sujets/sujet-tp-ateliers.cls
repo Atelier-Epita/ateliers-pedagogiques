@@ -46,10 +46,17 @@
 % change section numbering to Roman
 \renewcommand\thesection{\Roman{section}}
 
+
+%% Custom macros %%
+
+% doclink
+\newcommand{\doclink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+
 % break line
 \newcommand{\br}{\vspace{12pt}}
 
-% preconfigured figure to illustrate content
+% illustrate 
+% (preconfigured figure to illustrate content)
 \newcommand{\illustrate}[2]{
 	\begin{figure}[ht]
 		\centering
@@ -58,8 +65,7 @@
 	\end{figure}}
 }
 
-% custom tcolorboxes
-
+% hint
 \newcommand{\hint}[1]{
     \begin{tcolorbox}[
         enhanced,
@@ -76,6 +82,7 @@
     \end{tcolorbox}
 }
 
+% warning
 \newcommand{\warning}[1]{
     \begin{tcolorbox}[
         enhanced,
@@ -91,6 +98,7 @@
         {#1}
     \end{tcolorbox}
 }
+
 
 \AtEndPreamble{%
 % set some hyperref options if it's loaded
