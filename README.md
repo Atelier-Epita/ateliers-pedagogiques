@@ -33,13 +33,14 @@ Si vous jugez pertinent d'en ajouter de nouvelles, n'hésitez pas à ouvrir une 
 
 **Utilisez de préférence ces commandes plutôt que de les imiter afin de conserver l'homogénéité des sujets.**
 
-| Commande                     | Description                                                          |
-| ---------------------------- | -------------------------------------------------------------------- |
-| `\doclink{lien}{texte}`      | hyperlien avec note de bas de page                                   |
-| `\br`                        | saut de ligne                                                        |
-| `\illustrate{path}{légende}` | figure centrée (le path est à prendre à partir du dossier `images/`) |
-| `\hint{texte}`               | encadrement jaune menant à apporter un conseil, une précision        |
-| `\warning{texte}`            | encadrement rouge menant à avertir, insister sur un point important  |
+| Commande                     | Description                                                               |
+| ---------------------------- | ------------------------------------------------------------------------- |
+| `\doclink{lien}{texte}`      | hyperlien avec note de bas de page                                        |
+| `\br`                        | saut de ligne                                                             |
+| `\illustrate{path}{légende}` | figure centrée (le path est à prendre à partir du dossier `images/`)      |
+| `\bonus{texte}`              | encadrement bleu introduisant un exercice optionnel pour les plus avancés |
+| `\hint{texte}`               | encadrement jaune menant à apporter un conseil, une précision             |
+| `\warning{texte}`            | encadrement rouge menant à avertir, insister sur un point important       |
 
 
 ---
@@ -89,6 +90,7 @@ If you think it is appropriate to add new ones, feel free to open a pull request
 | `\doclink{link}{text}`       | hyperlink with footnote                                             |
 | `\br`                        | line break                                                          |
 | `\illustrate{path}{caption}` | centered figure (the path is to be taken from the `images/` folder) |
+| `\bonus{text}`               | blue frame introducing an optional exercise for most advanced       |
 | `\hint{text}`                | yellow frame leading to a tip, a clarification                      |
 | `\warning{text}`             | red frame leading to warning, emphasizing an important point        |
 

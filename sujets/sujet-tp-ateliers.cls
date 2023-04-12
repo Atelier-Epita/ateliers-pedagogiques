@@ -65,6 +65,23 @@
 	\end{figure}}
 }
 
+% bonus
+\newcommand{\bonus}[1]{
+    \begin{tcolorbox}[
+        enhanced,
+        colback=yellow-atelier!15,
+        colframe=blue!75!black,
+        coltitle=black,
+        colbacktitle=blue!30!white,
+        title={\includegraphics[height=11pt]{../../static/bonus} \large{\textbf{BONUS}}},
+        attach boxed title to top left={yshift=-11pt,xshift=11pt},
+        leftrule=2mm,
+        top=11pt
+        ]
+        {#1}
+    \end{tcolorbox}
+}
+
 % hint
 \newcommand{\hint}[1]{
     \begin{tcolorbox}[
