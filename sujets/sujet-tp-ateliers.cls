@@ -73,10 +73,10 @@
         colframe=blue!75!black,
         coltitle=black,
         colbacktitle=blue!30!white,
-        title={\includegraphics[height=11pt]{../../static/bonus} \large{\textbf{BONUS}}},
-        attach boxed title to top left={yshift=-11pt,xshift=11pt},
+        title={\includegraphics[height=10pt]{../../static/bonus} \normalsize{\textbf{BONUS}}},
+        attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
-        top=11pt
+        top=10pt
         ]
         {#1}
     \end{tcolorbox}
@@ -90,10 +90,10 @@
         colframe=yellow!75!black,
         coltitle=black,
         colbacktitle=yellow!50!white,
-        title={\includegraphics[height=11pt]{../../static/hint} \large{\textbf{HINT}}},
-        attach boxed title to top left={yshift=-11pt,xshift=11pt},
+        title={\includegraphics[height=10pt]{../../static/hint} \normalsize{\textbf{HINT}}},
+        attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
-        top=11pt
+        top=10pt
         ]
         {#1}
     \end{tcolorbox}
@@ -107,10 +107,10 @@
         colframe=red!75!black,
         coltitle=black,
         colbacktitle=red!50!white,
-        title={\includegraphics[height=11pt]{../../static/warning} \large{\textbf{WARNING}}},
-        attach boxed title to top left={yshift=-11pt,xshift=11pt},
+        title={\includegraphics[height=10pt]{../../static/warning} \normalsize{\textbf{WARNING}}},
+        attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
-        top=11pt
+        top=10pt
         ]
         {#1}
     \end{tcolorbox}
