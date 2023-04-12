@@ -37,6 +37,7 @@ Si vous jugez pertinent d'en ajouter de nouvelles, n'hésitez pas à ouvrir une 
 | ---------------------------- | ------------------------------------------------------------------------- |
 | `\doclink{lien}{texte}`      | hyperlien avec note de bas de page                                        |
 | `\br`                        | saut de ligne                                                             |
+| `\mono{texte}`               | texte stylisé en police mono et surligné en gris                          |
 | `\illustrate{path}{légende}` | figure centrée (le path est à prendre à partir du dossier `images/`)      |
 | `\bonus{texte}`              | encadrement bleu introduisant un exercice optionnel pour les plus avancés |
 | `\hint{texte}`               | encadrement jaune menant à apporter un conseil, une précision             |
@@ -89,6 +90,7 @@ If you think it is appropriate to add new ones, feel free to open a pull request
 | ---------------------------- | ------------------------------------------------------------------- |
 | `\doclink{link}{text}`       | hyperlink with footnote                                             |
 | `\br`                        | line break                                                          |
+| `\mono{text}`                | inline text stylized in mono font and higlighted in gray            |
 | `\illustrate{path}{caption}` | centered figure (the path is to be taken from the `images/` folder) |
 | `\bonus{text}`               | blue frame introducing an optional exercise for most advanced       |
 | `\hint{text}`                | yellow frame leading to a tip, a clarification                      |

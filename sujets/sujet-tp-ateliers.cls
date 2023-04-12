@@ -55,13 +55,16 @@
 % break line
 \newcommand{\br}{\vspace{12pt}}
 
+% mono
+\newcommand{\mono}[1]{\small\fcolorbox{gray}{gray!30!white}{\texttt{#1}}}
+
 % illustrate 
 % (preconfigured figure to illustrate content)
 \newcommand{\illustrate}[2]{
 	\begin{figure}[ht]
 		\centering
-		\includegraphics[width=12cm]{images/{#1}}
-		\caption{\textit{{#2}}
+		\includegraphics[width=12cm]{images/#1}
+		\caption{\textit{#2}
 	\end{figure}}
 }
 
