@@ -46,7 +46,7 @@
 \newcommand{\doclink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
 
 % break line
-\newcommand{\br}{\vspace{12pt}}
+\newcommand{\br}{\vspace{10pt}}
 
 % mono
 \newcommand{\mono}[1]{\small\fcolorbox{gray}{gray!30!white}{\texttt{#1}}}
