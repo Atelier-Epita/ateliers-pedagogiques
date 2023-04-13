@@ -69,7 +69,7 @@
         colframe=blue!75!black,
         coltitle=black,
         colbacktitle=blue!30!white,
-        title={\includegraphics[height=10pt]{../../static/bonus} \normalsize{\textbf{BONUS}}},
+        title={\includegraphics[height=10pt]{../../static/bonus} \hspace{1.5pt} \normalsize{\textbf{BONUS}}},
         attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
         top=10pt
@@ -86,7 +86,7 @@
         colframe=yellow!75!black,
         coltitle=black,
         colbacktitle=yellow!50!white,
-        title={\includegraphics[height=10pt]{../../static/hint} \normalsize{\textbf{HINT}}},
+        title={\includegraphics[height=10pt]{../../static/hint} \hspace{1.5pt} \normalsize{\textbf{HINT}}},
         attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
         top=10pt
@@ -103,7 +103,7 @@
         colframe=red!75!black,
         coltitle=black,
         colbacktitle=red!50!white,
-        title={\includegraphics[height=10pt]{../../static/warning} \normalsize{\textbf{WARNING}}},
+        title={\includegraphics[height=10pt]{../../static/warning} \hspace{1.5pt} \normalsize{\textbf{WARNING}}},
         attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
         top=10pt
