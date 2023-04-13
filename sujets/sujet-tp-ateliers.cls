@@ -66,9 +66,9 @@
     \begin{tcolorbox}[
         enhanced,
         colback=yellow-atelier!15,
-        colframe=blue!75!black,
+        colframe=blue-atelier!80!black,
         coltitle=black,
-        colbacktitle=blue!30!white,
+        colbacktitle=blue-atelier!35!white,
         title={\includegraphics[height=10pt]{../../static/bonus} \hspace{1.5pt} \normalsize{\textbf{BONUS}}},
         attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
@@ -83,9 +83,9 @@
     \begin{tcolorbox}[
         enhanced,
         colback=yellow-atelier!15,
-        colframe=yellow!75!black,
+        colframe=yellow-atelier!80!black,
         coltitle=black,
-        colbacktitle=yellow!50!white,
+        colbacktitle=yellow-atelier!50!white,
         title={\includegraphics[height=10pt]{../../static/hint} \hspace{1.5pt} \normalsize{\textbf{HINT}}},
         attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
@@ -100,9 +100,9 @@
     \begin{tcolorbox}[
         enhanced,
         colback=yellow-atelier!15,
-        colframe=red!75!black,
+        colframe=red-atelier!70!black,
         coltitle=black,
-        colbacktitle=red!50!white,
+        colbacktitle=red-atelier!70!white,
         title={\includegraphics[height=10pt]{../../static/warning} \hspace{1.5pt} \normalsize{\textbf{WARNING}}},
         attach boxed title to top left={yshift=-10pt,xshift=10pt},
         leftrule=2mm,
@@ -118,7 +118,10 @@
 % leave loading it to the user so they can get the order right
 \@ifpackageloaded{hyperref}{%
 \providecolor{yellow-atelier}{HTML}{fab60a}
-\providecolor{dark-yellow-atelier}{HTML}{BA8807}
+\providecolor{dark-yellow-atelier}{HTML}{ba8807}
+\providecolor{red-atelier}{HTML}{fa1664}
+\providecolor{green-atelier}{HTML}{23fa37}
+\providecolor{blue-atelier}{HTML}{235cfa}
 \hypersetup{colorlinks,allcolors=dark-yellow-atelier}%
 }{}%
 }
