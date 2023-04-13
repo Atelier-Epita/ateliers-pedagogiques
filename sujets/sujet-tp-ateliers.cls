@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sujet-tp-ateliers}[2023/01/12 v0.0.1 Sujet de TP pour les ateliers pédagogiques]
+\ProvidesClass{sujet-tp-ateliers}[2023/04/13 v0.2.1 Sujet de TP pour les ateliers pédagogiques]
 % sample software documentation format
 
 
@@ -7,13 +7,6 @@
 % (fullpage used as fallback if geometry package removed from main preamble)
 \RequirePackage{fullpage,parskip}
 \linespread{1.1}
-
-% use Roboto as the main font
-\RequirePackage[utf8]{inputenc}
-\RequirePackage[T1]{fontenc}
-\RequirePackage[sfdefault]{roboto}
-\RequirePackage[scaled=0.95]{roboto-mono}
-\RequirePackage{sfmath}
 
 % load the base class with default options
 \LoadClass[12pt,a4paper]{article}
