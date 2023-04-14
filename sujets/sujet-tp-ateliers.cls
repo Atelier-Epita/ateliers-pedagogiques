@@ -156,5 +156,11 @@
     belowskip=6pt
 }
 \lstset{style=atelier}
+\lstdefinelanguage{openscad}{
+	morekeywords={function, module, for, let, true, false, if, else, use, assert, echo},
+	morecomment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	morestring=[b]"
+}
 }{}%
 }
