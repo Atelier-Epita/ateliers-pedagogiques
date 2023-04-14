@@ -63,6 +63,7 @@
 
 % bonus
 \newcommand{\bonus}[1]{
+    \vspace{6pt}
     \begin{tcolorbox}[
         enhanced,
         colback=yellow-atelier!15,
@@ -76,10 +77,12 @@
         ]
         {#1}
     \end{tcolorbox}
+    \vspace{6pt}
 }
 
 % hint
 \newcommand{\hint}[1]{
+    \vspace{6pt}
     \begin{tcolorbox}[
         enhanced,
         colback=yellow-atelier!15,
@@ -93,10 +96,12 @@
         ]
         {#1}
     \end{tcolorbox}
+    \vspace{6pt}
 }
 
 % warning
 \newcommand{\warning}[1]{
+    \vspace{6pt}
     \begin{tcolorbox}[
         enhanced,
         colback=yellow-atelier!15,
@@ -110,6 +115,7 @@
         ]
         {#1}
     \end{tcolorbox}
+    \vspace{6pt}
 }
 
 
