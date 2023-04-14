@@ -27,6 +27,34 @@ Utilisez la commande \mono{\textbackslash br}
 
 Utilisez la commande \mono{\textbackslash mono\{\textit{texte}\}} pour afficher un texte stylisé (comme ici).
 
+\subsection{Bloc de code}
+
+Utilisez le package listings défini \doclink{https://texdoc.org/serve/listings.pdf/0}{ici}.
+Par exemple,\\
+\mono{\textbackslash begin\{lstlistings\}[language=...]} \hspace{6pt}
+\textit{votre code} \hspace{6pt}
+\mono{\textbackslash end\{lstlistings\}}\\
+vous donne
+
+\begin{lstlisting}[language=python, title={Exemple de bloc de code}]
+import math
+
+# important
+def square(x):
+	'''
+	wow what a function!
+	'''
+	y = 0
+	for _ in range(x):
+		y += x
+	return y
+	
+print("5^2 = ", str(square(5)))
+\end{lstlisting}
+
+Si vous souhaitez avoir un bloc sans rupture rajoutez les paramètres
+\mono{float, floatplacement=H}.
+
 \subsection{Illustration}
 
 Pour ajouter une illustration (figure) au bon format

@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sujet-tp-ateliers}[2023/04/13 v0.2.1 Sujet de TP pour les ateliers pédagogiques]
+\ProvidesClass{sujet-tp-ateliers}[2023/04/13 v0.3.1 Sujet de TP pour les ateliers pédagogiques]
 % sample software documentation format
 
 
@@ -119,15 +119,42 @@
 }
 
 
-\AtEndPreamble{%
+\AtEndPreamble{
 % set some hyperref options if it's loaded
 % leave loading it to the user so they can get the order right
-\@ifpackageloaded{hyperref}{%
+\@ifpackageloaded{hyperref}{
+% custom colors
 \providecolor{yellow-atelier}{HTML}{fab60a}
 \providecolor{dark-yellow-atelier}{HTML}{ba8807}
 \providecolor{red-atelier}{HTML}{fa1664}
 \providecolor{green-atelier}{HTML}{23fa37}
 \providecolor{blue-atelier}{HTML}{235cfa}
-\hypersetup{colorlinks,allcolors=dark-yellow-atelier}%
+\hypersetup{colorlinks,allcolors=dark-yellow-atelier}
+}{}
+
+% setup code listings style
+\@ifpackageloaded{listings}{
+\lstdefinestyle{atelier}{
+    backgroundcolor=\color{yellow-atelier!15},   
+    commentstyle=\color{green-atelier!70!black}\itshape,
+    keywordstyle=\color{blue-atelier!80!black},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{red-atelier!70!black},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single,
+    aboveskip=6pt,
+    belowskip=6pt
+}
+\lstset{style=atelier}
 }{}%
 }
