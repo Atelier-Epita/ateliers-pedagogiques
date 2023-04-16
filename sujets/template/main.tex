@@ -7,10 +7,6 @@
 
 \include{../packages}
 
-% Custom macros
-\newcommand{\doclink}[2]{\href{#1}{#2}\footnote{\url{#1}}}
-\newcommand{\cs}[1]{\texttt{\textbackslash #1}}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DO NOT MODIFY ANYTHING ABOVE THIS BLOCK %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,27 +28,23 @@
 % configure header & footer
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyhead[L]{\includegraphics[width=2cm]{../../static/logo}}
-\fancyhead[R]{\gettitle}
+\fancyhead[L]{\includegraphics[width=2cm]{../../static/logo} \vspace{4pt}}
+\fancyhead[R]{\gettitle \vspace{4pt}}
 \fancyfoot[C]{\thepage}
 
 \tableofcontents
 
 
 \newpage
-\section{Résumé}
 \include{sections/resume}
 
 \newpage
-\section{Avant de commencer}
 \include{sections/avant_de_commencer}
 
 \newpage
-\section{Sujet}
 \include{sections/sujet}
 
 \newpage
-\section{Annexes}
 \include{sections/annexes}
 
 

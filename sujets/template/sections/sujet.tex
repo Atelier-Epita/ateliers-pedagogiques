@@ -1,0 +1,67 @@
+\section{Sujet}
+Développez ici l'entièreté de votre sujet.
+Structurez de manière cohérente celui-ci en utilisant des subsections, subsubsections, ...
+
+\subsection{Encadrements}
+
+\warning{
+Afin de notifier un point important :
+\mono{\textbackslash warning\{\textit{texte}\}}
+}
+
+\hint{
+Pour ajouter une information :
+\mono{\textbackslash hint\{\textit{texte}\}}
+}
+
+\bonus{
+Exercice bonus si la personne est suffisamment avancée :
+\mono{\textbackslash bonus\{\textit{texte}\}}
+}
+
+\subsection{Saut de ligne}
+
+Utilisez la commande \mono{\textbackslash br}
+
+\subsection{Lien}
+Pour intégrer un lien utilisez la commande
+\mono{\textbackslash doclink\{\textit{lien}\}\{\textit{texte}\}}
+
+\subsection{Morceau de code court}
+
+Utilisez la commande \mono{\textbackslash mono\{\textit{texte}\}} pour afficher un texte stylisé (comme ici).
+
+\subsection{Bloc de code}
+
+Utilisez le package listings défini \doclink{https://texdoc.org/serve/listings.pdf/0}{ici}.
+Par exemple,\\
+\mono{\textbackslash begin\{lstlistings\}[language=...]} \hspace{6pt}
+\textit{votre code} \hspace{6pt}
+\mono{\textbackslash end\{lstlistings\}}\\
+vous donne le rendu suivant :
+
+\begin{lstlisting}[language=python, title={Exemple de bloc de code}]
+import math
+
+# important
+def square(x):
+	'''
+	wow what a function!
+	'''
+	y = 0
+	for _ in range(x):
+		y += x
+	return y
+	
+print("5^2 = ", str(square(5)))
+\end{lstlisting}
+
+Si vous souhaitez avoir un bloc sans rupture rajoutez les paramètres
+\mono{float, floatplacement=H}.
+
+\subsection{Illustration}
+
+Pour ajouter une illustration (figure) au bon format
+\mono{\textbackslash illustrate\{\textit{path}\}\{\textit{texte}\}}
+
+\warning{Le \textit{path} est à prendre à partir du dossier \texttt{images/}.}
