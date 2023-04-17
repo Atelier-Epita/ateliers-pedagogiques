@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{sujet-tp-ateliers}[2023/04/13 v0.3.1 Sujet de TP pour les ateliers pédagogiques]
+\ProvidesClass{sujet-tp-ateliers}[2023/04/13 v1.0.1 Sujet de TP pour les ateliers pédagogiques]
 % sample software documentation format
 
 
@@ -57,8 +57,8 @@
 	\begin{figure}[ht]
 		\centering
 		\includegraphics[width=12cm]{images/#1}
-		\caption{\textit{#2}
-	\end{figure}}
+		\caption{\textit{#2}}
+	\end{figure}
 }
 
 % bonus
