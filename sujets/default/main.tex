@@ -1,0 +1,51 @@
+%% Subject template with multiple examples
+%%
+%% Based on Overleaf's Technical Document Template
+%% https://www.overleaf.com/latex/templates/technical-document-template/mdgftpdfbvbs
+
+\documentclass{../sujet-tp-ateliers}
+
+\include{../packages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DO NOT MODIFY ANYTHING ABOVE THIS BLOCK %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Frontmatter data; appears on title page
+\newcommand\gettitle{TITRE}			%%% CHANGE HERE
+\newcommand{\getversion}{VERSION}	%%% CHANGE HERE
+\title{\gettitle}
+\version{\getversion}
+\author{AUTEUR}						%%% CHANGE HERE
+\logo{\includegraphics[width=8cm]{../../static/logo}}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{page}{1}
+
+% configure header & footer
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{\includegraphics[width=2cm]{../../static/logo} \vspace{4pt}}
+\fancyhead[R]{\gettitle \vspace{4pt}}
+\fancyfoot[C]{\thepage}
+
+\tableofcontents
+
+
+\newpage
+\include{sections/resume}
+
+\newpage
+\include{sections/avant_de_commencer}
+
+\newpage
+\include{sections/sujet}
+
+\newpage
+\include{sections/annexes}
+
+
+\end{document}
