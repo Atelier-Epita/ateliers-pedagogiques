@@ -56,3 +56,23 @@ Le microcontrôleur peut être programmé pour analyser et produire des signaux 
 C'est une plateforme basée sur une interface entrée/sortie simple.
 
 Vous allez utiliser dans cet atelier une carte \textbf{Arduino Uno R3} mais il en existe de nombreux autres modèles plus adpatés à certains cas d'utilisation, comme les cartes \textit{Nano} ou \textit{Mega}.
+
+\subsubsection{Les différents pins de branchement}
+
+\illustrate{arduino_uno_r3.png}{Branchements sur une carte}
+
+\begin{itemize}
+	\item En \textbf{noir}, les pins de masse.
+		  Ce sont les bornes négatives du circuit.
+		  Les trois sont les mêmes et indistinctes.
+	\item En \textbf{rouge}, les pins d'alimentation.
+		  Du courant provient de ces pins, ce sont les bornes positives.
+		  Il y a deux tensions disponibles mais vous n'allez utiliser que celle en 5V.
+	\item En \textbf{bleu}, les pins d'entrée/sortie numérique.
+		  Ces pins permettent de lire et écrire de l'information binaire (HIGH ou LOW).
+		  Il est possible d'écrire en analogique sur les pins avec le symbole \boldmath$\sim$.
+	\item En \textbf{vert}, les pins d'entrée analogique.
+		  Ces pins permettent de lire de l'information analogique.
+		  L'écriture n'est pas possible.
+	\item Les autres pins ne seront pas utiles pour cet atelier.
+\end{itemize}
