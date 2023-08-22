@@ -76,3 +76,30 @@ Vous allez utiliser dans cet atelier une carte \textbf{Arduino Uno R3} mais il e
 		  L'écriture n'est pas possible.
 	\item Les autres pins ne seront pas utiles pour cet atelier.
 \end{itemize}
+
+\subsubsection{Le langage Arduino}
+
+L'intérêt de ces cartes est de pouvoir les programmer afin de contrôler les éléments qui y sont branchés.
+Cela ce fait avec le langage Arduino à la syntaxe très proche de C et C++.
+Vous pouvez retrouver la référence \doclink{https://www.arduino.cc/reference/en/}{ici}, n'hésitez pas à aller vous renseigner fréquemment en cas de besoin.
+Diverses bibliothèques sont également disponibles en fonction des composants utilisés.
+
+\br
+Au minimum, vous aurez besoin d'utiliser :
+\begin{itemize}
+	\item \textbf{pinMode(pin, mode)} pour définir le mode de fonctionnement d'un pin (INPUT ou OUTPUT)
+	\item \textbf{digitalRead(pin)} pour lire la valeur numérique d'un pin (HIGH ou LOW)
+	\item \textbf{digitalWrite(pin, value)} pour écrire une valeur numérique (HIGH ou LOW) sur un pin
+	\item \textbf{analogRead(pin)} pour lire la valeur analogique d'un pin
+	\item \textbf{analogWrite(pin, value)} pour écrire une valeur analogique sur un pin	
+\end{itemize}
+
+\br
+Deux fonctions sont présentes de base lorsque vous placez une carte sur Tinkercad :
+\begin{itemize}
+	\item \textbf{setup()} qui est appelée lorsque la carte est mise sous tension
+	\item \textbf{loop()} qui est appelée en continu
+\end{itemize}
+
+\hint{Il est fortement recommandé d'ajouter un délai de quelques millisecondes avant la fin à l'aide de la fonction \textbf{delay(temps)}}
+
