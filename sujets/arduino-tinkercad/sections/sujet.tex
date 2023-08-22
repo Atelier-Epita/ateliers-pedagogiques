@@ -71,6 +71,7 @@ Vous allez utiliser dans cet atelier une carte \textbf{Arduino Uno R3} mais il e
 	\item En \textbf{bleu}, les pins d'entrée/sortie numérique.
 		  Ces pins permettent de lire et écrire de l'information binaire (HIGH ou LOW).
 		  Il est possible d'écrire en analogique sur les pins avec le symbole \boldmath$\sim$.
+		  Attention, le pin 0 n'est pas utilisable en lecture.
 	\item En \textbf{vert}, les pins d'entrée analogique.
 		  Ces pins permettent de lire de l'information analogique.
 		  L'écriture n'est pas possible.
@@ -103,3 +104,27 @@ Deux fonctions sont présentes de base lorsque vous placez une carte sur Tinkerc
 
 \hint{Il est fortement recommandé d'ajouter un délai de quelques millisecondes avant la fin à l'aide de la fonction \textbf{delay(temps)}}
 
+
+\clearpage
+\subsection{Application}
+Maintenant que vous avez des ressources à disposition, c'est le moment de se lancer !
+Voici quelques exercices pour résumer ce qui a été présenté.
+Il est recommandé de les faire à la suite pour construire un système de plus en plus complexe.
+Les solutions sont en annexe si nécessaire.
+
+\subsubsection{Envie de buzzer...}
+Matériel : \textit{une carte arduino, un bouton poussoir, une résistance, un buzzer piezo}
+\\
+\textbf{Lorsque le bouton est pressé, il faut que le piezo émette un son.}
+
+\subsubsection{Que la lumière soit !}
+Matériel : \textit{le résultat du précédent, deux LEDs (une verte et une rouge), deux résistances}
+\\
+\textbf{Lorsque le bouton est relâché, la LED rouge doit être allumée}
+\\
+\textbf{Lorsque le bouton est pressé, la LED verte doit être allumée}
+
+\subsubsection{Bientôt DJ ?}
+Matériel : \textit{le résultat du précédent, un potentiomètre}
+\\
+\textbf{Le potentiomètre doit contrôler la fréquence du buzzer piezo}
