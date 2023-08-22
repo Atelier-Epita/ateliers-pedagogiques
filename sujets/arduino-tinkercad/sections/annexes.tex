@@ -1,5 +1,115 @@
 \section{Annexes}
 
+\subsection{Corrigé des exercices d'application}
+
+\illustrate{exo_1.png}{Envie de buzzer...}
+
+\illustrate{exo_2.png}{Que la lumière soit !}
+
+\illustrate{exo_3.png}{Bientôt DJ ?}
+
+\begin{tcolorbox}[colback=yellow-atelier!10, colframe=gray!70!black, coltitle=black, colbacktitle=gray!70!white, title={\textit{Envie de buzzer...}}, leftrule=2mm]
+\begin{small}
+\begin{verbatim}
+const int button = 1, piezo = 3;
+
+bool is_pressed = false;
+
+void setup(){
+  pinMode(button, INPUT);
+  pinMode(piezo, OUTPUT);
+}
+
+void loop(){  
+  if (!is_pressed && digitalRead(button) == HIGH){
+    is_pressed = true;
+  	analogWrite(piezo, 20); 	// doit être >0 et <1024
+  }
+  else if (is_pressed && digitalRead(button) == LOW){
+    is_pressed = false;
+  	analogWrite(piezo, 0);
+  }
+  
+  delay(10);
+}
+\end{verbatim}
+\end{small}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=yellow-atelier!10, colframe=gray!70!black, coltitle=black, colbacktitle=gray!70!white, title={\textit{Que la lumière soit !}}, leftrule=2mm]
+\begin{small}
+\begin{verbatim}
+const int button = 1, piezo = 3, led_g = 12, led_r = 13;
+
+bool is_pressed = false;
+
+void setup(){
+  pinMode(button, INPUT);
+  pinMode(piezo, OUTPUT);
+  pinMode(led_g, OUTPUT);
+  pinMode(led_r, OUTPUT);
+}
+
+void loop(){
+  if (!is_pressed && digitalRead(button) == HIGH){
+    is_pressed = true;
+  	analogWrite(piezo, 20); 	// doit être >0 et <1024
+    digitalWrite(led_r, LOW);
+    digitalWrite(led_g, HIGH);
+  }
+  else if (is_pressed && digitalRead(button) == LOW){
+    is_pressed = false;
+  	analogWrite(piezo, 0);
+    digitalWrite(led_g, LOW);
+    digitalWrite(led_r, HIGH);
+  }
+  
+  delay(10);
+}
+\end{verbatim}
+\end{small}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=yellow-atelier!10, colframe=gray!70!black, coltitle=black, colbacktitle=gray!70!white, title={\textit{Bientôt DJ ?}}, leftrule=2mm]
+\begin{small}
+\begin{verbatim}
+const int button = 1, piezo = 3, led_g = 12, led_r = 13, potentiometer = A0;
+
+bool is_pressed = false;
+int frequency = 0;
+
+void setup(){
+  pinMode(button, INPUT);
+  pinMode(piezo, OUTPUT);
+  pinMode(led_g, OUTPUT);
+  pinMode(led_r, OUTPUT);
+}
+
+void loop(){
+  frequency = analogRead(potentiometer) *20 / 1023;
+  
+  if (!is_pressed && digitalRead(button) == HIGH){
+    is_pressed = true;
+  	analogWrite(piezo, frequency);
+    digitalWrite(led_r, LOW);
+    digitalWrite(led_g, HIGH);
+  }
+  else if (is_pressed && digitalRead(button) == LOW){
+    is_pressed = false;
+  	analogWrite(piezo, 0);
+    digitalWrite(led_g, LOW);
+    digitalWrite(led_r, HIGH);
+  }
+  
+  delay(10);
+}
+\end{verbatim}
+\end{small}
+\end{tcolorbox}
+
+\clearpage
+\subsection{Liens utiles}
+
 \begin{itemize}
 	\item \doclink{https://www.tinkercad.com}{Tinkercad}
 	\item \doclink{https://docs.arduino.cc/}{Documentation Arduino}
