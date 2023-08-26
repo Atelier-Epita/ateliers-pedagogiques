@@ -128,3 +128,32 @@ Matériel : \textit{le résultat du précédent, deux LEDs (une verte et une rou
 Matériel : \textit{le résultat du précédent, un potentiomètre}
 \\
 \textbf{Le potentiomètre doit contrôler la fréquence du buzzer piezo}
+
+
+\subsection{Mini-projet : arduiPONG}
+Vous arrivez à la fin de cet atelier avec désormais de bonnes connaissances pour vous aventurer par vous-même !
+Voici une proposition de petit projet que vous devriez être en mesure de faire : recréer votre version du jeu Pong en utilisant des entrées/sorties physiques.
+\\
+Voici la description :
+\begin{itemize}
+	\item Un bouton principal permet de lancer le jeu
+	\item Deux joueurs s'affrontent et commandent leur raquette avec deux boutons chacun (haut et bas)
+	\item Chaque joueur a une LED qui s'allume lorsqu'un point est gagné
+	\item L'affichage se fait à l'aide d'un écran LCD, suivez la \doclink{https://docs.arduino.cc/learn/electronics/lcd-displays}{documentation} pour le brancher et l'utiliser
+	\item Vous pouvez rajouter un buzzer piezo qui émettra des sons quand un but est marqué, au décompte du départ, à chaque rebond, etc...
+\end{itemize}
+
+Avec ce système, vous devriez utiliser les 14 pins numériques avec :
+\begin{itemize}
+	\item 5 boutons
+	\item 2 LEDs
+	\item 1 écran LCD
+	\item 1 buzzer piezo
+	\item 1 potentiomètre (si vous voulez pouvoir régler le contrast de l'écran)
+	\item 3 résistances 220$\Omega$
+	\item 5 résistances 10k$\Omega$
+\end{itemize}
+
+Une proposition de circuit est disponible en annexe.
+Le code n'est pas inclus car il relève davantage d'un problème de programmation et se trouve hors du spectre de cet atelier.
+Libre à vous d'implémenter les fonctionnalités que vous désirez !
