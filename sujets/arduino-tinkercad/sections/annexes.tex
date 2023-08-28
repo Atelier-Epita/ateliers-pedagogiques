@@ -23,11 +23,11 @@ void setup(){
 void loop(){  
   if (!is_pressed && digitalRead(button) == HIGH){
     is_pressed = true;
-  	analogWrite(piezo, 20); 	// doit être >0 et <1024
+    analogWrite(piezo, 20); 	// doit être >0 et <1024
   }
   else if (is_pressed && digitalRead(button) == LOW){
     is_pressed = false;
-  	analogWrite(piezo, 0);
+    analogWrite(piezo, 0);
   }
   
   delay(10);
@@ -53,13 +53,13 @@ void setup(){
 void loop(){
   if (!is_pressed && digitalRead(button) == HIGH){
     is_pressed = true;
-  	analogWrite(piezo, 20); 	// doit être >0 et <1024
+    analogWrite(piezo, 20); 	// doit être >0 et <1024
     digitalWrite(led_r, LOW);
     digitalWrite(led_g, HIGH);
   }
   else if (is_pressed && digitalRead(button) == LOW){
     is_pressed = false;
-  	analogWrite(piezo, 0);
+    analogWrite(piezo, 0);
     digitalWrite(led_g, LOW);
     digitalWrite(led_r, HIGH);
   }
@@ -90,13 +90,13 @@ void loop(){
   
   if (!is_pressed && digitalRead(button) == HIGH){
     is_pressed = true;
-  	analogWrite(piezo, frequency);
+    analogWrite(piezo, frequency);
     digitalWrite(led_r, LOW);
     digitalWrite(led_g, HIGH);
   }
   else if (is_pressed && digitalRead(button) == LOW){
     is_pressed = false;
-  	analogWrite(piezo, 0);
+    analogWrite(piezo, 0);
     digitalWrite(led_g, LOW);
     digitalWrite(led_r, HIGH);
   }
